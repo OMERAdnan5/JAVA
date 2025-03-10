@@ -53,7 +53,7 @@ public class whileloop {
             // $ $ $ $ $ $
             // $ $ $ $ $ $
             // $ $ $ $ $ $
-            // $ $ $ $ $ $    rox & column are same but looks like a rectangle
+            // $ $ $ $ $ $    row & column are same but looks like a rectangle
             // $ $ $ $ $ $ 
             // $ $ $ $ $ $ 
         }
