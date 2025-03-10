@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class hello{
+public class elseif{
     public static void main(String[] name)
     {
         Scanner input = new Scanner(System.in);
