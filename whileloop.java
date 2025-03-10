@@ -33,6 +33,12 @@ public class whileloop {
             System.out.println("");
             a++;
         }
+// *
+// * *
+// * * * 
+// * * * *
+// * * * * *
+// * * * * * * 
         System.out.println("square");
         int c = 0;
         while(c<=5){
@@ -44,11 +50,16 @@ public class whileloop {
             }
             System.out.println("");
             c++;
+            // $ $ $ $ $ $
+            // $ $ $ $ $ $
+            // $ $ $ $ $ $
+            // $ $ $ $ $ $    rox & column are same but looks like a rectangle
+            // $ $ $ $ $ $ 
+            // $ $ $ $ $ $ 
         }
-        System.out.println("right angle triangle");
+        System.out.println(" inverse right angle triangle");
         int l = 5;
         while(l>=0){
-            // System.out.print("* ");
             int m = 0;
             while(m<=l){
                 System.out.print("* ");
@@ -56,6 +67,12 @@ public class whileloop {
             }
             System.out.println("");
             l--;
+            // * * * * * *
+            // * * * * *
+            // * * * *
+            // * * *
+            // * *
+            // *
         }
         System.out.println("Another 1");
         int x = 0;
@@ -72,6 +89,33 @@ public class whileloop {
             }
             System.out.println("");
             x++;
+            // @ @ @ @ @
+            //   @ @ @ @
+            //     @ @ @
+            //       @ @
+            //         @
+
+        }
+        int p = 5;
+        while(p>=0){
+            int q = 0;
+            while(q<=p-1){
+                System.out.print("  ");                    
+                q++;
+            }                                        
+            int r = 0;
+            while(r<(5-p)){
+                System.out.print("U ");
+                r++;
+            }
+
+            System.out.println("");
+            p--;
+    //           U 
+    //         U U
+    //       U U U
+    //     U U U U
+    //   U U U U U
 
         }
     }
