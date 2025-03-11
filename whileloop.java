@@ -144,6 +144,27 @@ public class whileloop {
     //     ^ ^ ^ ^ ^
     //   ^ ^ ^ ^ ^ ^ ^
     // ^ ^ ^ ^ ^ ^ ^ ^ ^
+        int V  = 0;
+        while(V<=5){
+           int W = 0;
+           while(W<=V){
+            System.out.print("  ");
+            W++;
+           }
+           int T = 0;
+           while(T<=5-V){
+            System.out.print("# ");
+            T++;
+           }
+           int U = 0;
+           while(U<=5-(V+1)){
+            System.out.print("# ");
+            U++;
+           }
+           System.out.println("");
+           V++;
+           
+        }
         int X = 5;
         while(X>=0){
             int Y = 0;
@@ -185,5 +206,17 @@ public class whileloop {
             J++;
             
         }
+//           $ 
+//         $ $ $
+//       $ $ $ $ $
+//     $ $ $ $ $ $ $
+//   $ $ $ $ $ $ $ $ $
+// $ $ $ $ $ $ $ $ $ $ $
+// $ $ $ $ $ $ $ $ $ $ $
+//   $ $ $ $ $ $ $ $ $ 
+//     $ $ $ $ $ $ $
+//       $ $ $ $ $
+//         $ $ $
+//           $
     }
 }
