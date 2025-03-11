@@ -116,9 +116,74 @@ public class whileloop {
     //       U U U
     //     U U U U
     //   U U U U U
+         
+        }
+        int P = 5;
+         while(P>=0){
+            int Q = 0;
+            while(Q<=P-1){
+              System.out.print("  ");                    
+              Q++;
+            }                                        
+            int R = 0;
+            while(R<(5-P)){
+              System.out.print("^ ");
+              R++;
+            }
+            int S = 0;
+            while(S<(5-(P+1))){
+                System.out.print("^ ");
+                S++;
+            }
 
+            System.out.println("");
+            P--;
+          }
+    //         ^
+    //       ^ ^ ^ 
+    //     ^ ^ ^ ^ ^
+    //   ^ ^ ^ ^ ^ ^ ^
+    // ^ ^ ^ ^ ^ ^ ^ ^ ^
+        int X = 5;
+        while(X>=0){
+            int Y = 0;
+            while(Y<=X){
+                System.out.print("  ");
+                Y++;
+            }
+            int Z = 0;
+            while(Z<= 5-(X)){ 
+                System.out.print("$ ");
+                Z++;
+            }
+            int L = 0;
+            while(L<= 5-(X+1)){ 
+                System.out.print("$ ");
+                L++;
+            }   
+            System.out.println("");
+            X--; 
+        }
+        int J = 0;
+        while(J<=5){
+            int K =0;
+            while(K<=J){
+                System.out.print("  ");
+                K++;
+            }
+            int H=0;
+            while(H<=5-J){
+                System.out.print("$ ");
+                H++;
+            }
+            int A=0;
+            while(A<5-J){
+                System.out.print("$ ");
+                A++;
+            }
+            System.out.println("");
+            J++;
+            
         }
     }
-
-
 }
