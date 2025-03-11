@@ -165,6 +165,14 @@ public class whileloop {
            V++;
            
         }
+        System.out.println("");
+    //   # # # # # # # # # # #
+    //     # # # # # # # # #
+    //       # # # # # # #
+    //         # # # # #
+    //           # # #
+    //             #
+
         int X = 5;
         while(X>=0){
             int Y = 0;
