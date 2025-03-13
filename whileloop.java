@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class whileloop {
     public static void main(String[] args)
     {
@@ -226,5 +227,49 @@ public class whileloop {
 //       $ $ $ $ $
 //         $ $ $
 //           $
+        //factorial 
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number to get factorial: ");
+        int num = scanner.nextInt();
+        scanner.nextLine();
+        int fac = 1,I = 1;
+        while(I<=num){
+             fac*=I;
+             I++;
+        }
+        System.out.printf("The factorial of %d is %d\n",num,fac);
+        System.out.println("");
+        //Table
+        System.out.print("Enter a whole number for table 1~10: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        I = 1;
+        System.out.println("Table of "+n);
+        while(I<=10){
+            System.out.println( n+" x "+I+" = "+n*I);
+            I++;
+        }
+        //prime numbers from 1 - 50;
+        System.out.println("prime numbers from 1 - 50");
+        int S = 2;
+        while(S<=50){
+            int E = 2;
+            boolean isprime = true; 
+            while(E<S){
+                if(S%E==0){
+                    isprime = false;
+                    break;
+                }
+                E++;
+            }
+            if(isprime){
+                System.out.println(S);
+            }
+            S++;
+        }
+        
+
+
+
     }
 }
