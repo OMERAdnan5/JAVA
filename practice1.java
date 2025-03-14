@@ -33,6 +33,18 @@ public class practice1 {
        else{
         System.out.println("Invalid Syntax");
        }
+       //Compound Interest calculator
+       System.out.println("Enter principal amount :");
+       double p = input.nextDouble();
+       System.out.println("Enter annual interest rate % :");
+       double I = input.nextDouble();
+       I /=100;
+       System.out.println("Enter times compounded per year :");
+       double tc = input.nextDouble();
+       System.out.println("Enter duration :");
+       double t = input.nextDouble();
+       double a = p * Math.pow((1 + I/tc),tc*t);
+       System.out.printf("The total amount with interest rate of %.2f %c.\ncompounded per year  %.2f time(s) and duration %.2f years is %.2f $\n",I*100,'%',tc,t,a);
        input.close();
     }
 }
