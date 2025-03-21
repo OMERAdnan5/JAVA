@@ -17,6 +17,11 @@ public class RockPaperScissors {
            }
            else if(user_choice.equals(computer_choice)){
             System.out.println("\nIt's a Draw");
+            System.out.print("\nDo you want to play again?(Y/N): ");
+            String again = I.nextLine();
+            if(!again.equalsIgnoreCase("Y")){
+               play = "No";
+            }
            }
            else if((user_choice.equals("Rock") && computer_choice.equals("Scissor")) || (user_choice.equals("Paper") && computer_choice.equals("Rock")) || (user_choice.equals("Scissor")&& computer_choice.equals("Paper"))){
             System.out.println("\nYou Won");
@@ -29,6 +34,11 @@ public class RockPaperScissors {
            }
            else{
             System.out.println("\nYou Lose");
+            System.out.print("\nDo you want to play again?(Y/N): ");
+            String again = I.nextLine();
+            if(!again.equalsIgnoreCase("Y")){
+               play = "No";
+            }
            }
         
 
