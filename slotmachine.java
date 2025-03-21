@@ -49,6 +49,18 @@ public class slotmachine{
                     balance+=(bet*times);
                     System.out.println("You Won: "+(bet*times)+" $.");
                 }
+                else if(slot[0].equals(slot[2])) {
+                    System.out.println("You Won");
+                    switch(slot[0]){
+                        case "🤑" -> times = 2;
+                        case "🍓" -> times = 1.4;
+                        case "🌺" -> times = 1.6;
+                        case "😍" -> times = 1.8;
+                        case "💎" -> times = 2.5;
+                    }
+                    balance+=(bet*times);
+                    System.out.println("You Won: "+(bet*times)+" $.");
+                }
                 else{
                     System.out.println("You Lost");
                 }
