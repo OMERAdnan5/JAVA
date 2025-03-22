@@ -9,6 +9,7 @@ public class BubbleSort {
         System.out.println("\nBubble Sort");
         String[] alphabets = {"b","f","c","a","e","d"};
         display(alphabets);
+        Array(alphabets);
         for(int i = 0;i<alphabets.length-1;i++){
             for(int j = 0;j<alphabets.length-i-1;j++){
                 if(alphabets[j].compareTo(alphabets[j+1])>0){
@@ -17,8 +18,11 @@ public class BubbleSort {
                     alphabets[j+1] = alpha;
                 }
             }
-        } 
+        }
+        display(alphabets);     
+        Array(alphabets); 
         int[] nums = {3,1,6,4,5,8,7,2}; 
+        Numray(nums);
         for(int i = 0;i<nums.length-1;i++){
             for(int j = 0 ;j <nums.length-i-1;j++){
                 if(nums[j]>nums[j+1]){
@@ -28,12 +32,34 @@ public class BubbleSort {
                 }
             }
         } 
-        display(alphabets);     
+        Numray(nums);
     }
     static void display(String[] array){
         for(String chr : array){
             System.out.print(chr+" ");
         }
         System.out.println("");
+    }
+    static  void Array(String[] array){ //we can't print array but this function allows us to
+        System.out.print("{");
+        for(int i = 0;i<array.length;i++){
+            System.out.print(array[i]);
+            if(i<array.length-1){
+                System.out.print(",");
+            }
+        }
+        System.out.println("}");
+        System.out.println(" ");
+    }
+    static  void Numray(int[] array){ //we can't print array but this function allows us to
+        System.out.print("{");
+        for(int i = 0;i<array.length;i++){
+            System.out.print(array[i]);
+            if(i<array.length-1){
+                System.out.print(",");
+            }
+        }
+        System.out.println("}");
+        System.out.println(" ");
     }
 }
