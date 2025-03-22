@@ -17,7 +17,17 @@ public class BubbleSort {
                     alphabets[j+1] = alpha;
                 }
             }
-        }   
+        } 
+        int[] nums = {3,1,6,4,5,8,7,2}; 
+        for(int i = 0;i<nums.length-1;i++){
+            for(int j = 0 ;j <nums.length-i-1;j++){
+                if(nums[j]>nums[j+1]){
+                    int num = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = num;
+                }
+            }
+        } 
         display(alphabets);     
     }
     static void display(String[] array){
