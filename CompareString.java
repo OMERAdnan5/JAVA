@@ -1,3 +1,5 @@
+
+
 public class CompareString {
     public static void main(String[] args) {
         String a1 = "a";
@@ -21,6 +23,27 @@ public class CompareString {
         System.out.println(a1.compareTo(a3)); //+ means 1st value is greater,- means 1st value is lesser,0 means they are equal
         System.out.println(a1.compareTo(a4)); //basically it returns difference in ASCII values
         System.out.println(a4.compareTo(a1)); // "A" = 65 , "a" = 97. having a difference of 32 between capital & small letters
+        System.out.println(a1.compareTo(a2)==0); //Can be used as conditional statements
+        System.out.println(a1.compareTo(a3)==0);
+        System.out.println(a1.compareTo(a4)>0); 
+        System.out.println(a4.compareTo(a1)<0);
+        String txt = "ProgrammingJava";
+        System.out.println(txt.startsWith("Program"));//checks prefixes
+        System.out.println(txt.endsWith("Java"));//checks suffixes
+        //boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
+        /*ignoreCase → true if comparison should ignore case, false if case-sensitive.
+        toffset → Starting index in the first string.
+        other → The second string to compare with.
+        ooffset → Starting index in the second string.
+        len → Number of characters to compare.
+        */
+        String str1 = "ABC12345";
+        String str2 = "abc12345";
+        System.out.println(str1.regionMatches(3, str2,3,5));
+        System.out.println(str1.regionMatches(true,0, str2,0,2));
+        System.out.println(str1.regionMatches(false/*default */,0, str2,0,2));
+        
+
 
     }
 }
