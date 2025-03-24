@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-
+//working on it
 public class StringtoInt {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class StringtoInt {
         System.out.println(first);
         System.out.println(second);
         int f = 0;
-        int s = 0;
+        long s = 0;
         switch(first){
             case "one" -> f = 1;
             case "two" -> f = 2;
@@ -60,11 +60,22 @@ public class StringtoInt {
             case "seven" -> s = 7;
             case "eight" -> s = 8;
             case "nine" -> s = 9;
+            case "hundred" -> s = 100;
+            case "thousand" -> s = 1000;
+            case "million" -> s = 1000000;
+            case "billion" -> s = 1000000000;
+            case "trillion" -> s = 1000000000000l;
             default -> System.out.println("Invalid Input");
         }
         System.out.println(f);
         System.out.println(s);
-        System.out.println(f+s);
+        if(s<10){
+            System.out.println(f + (int)s);
+        }
+        else{
+            System.out.println(f * s);
+            System.out.printf("\n%,d",f * s);
+        }
         
     }
 }
