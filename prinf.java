@@ -21,6 +21,7 @@ public class prinf {
         System.out.println("");
         System.out.println("Flag");
         System.out.printf("1 Million: %,d$\n",1000000);
+        System.out.printf("1 Million: %,d$\n",100000);
         System.out.printf(" Negative (-) inclosed: %(f\n",-999.9);
         System.out.printf("space: % d\n",-876);
         System.out.printf("space: % d\n",876);
