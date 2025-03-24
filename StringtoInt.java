@@ -2,6 +2,7 @@
 import java.util.Scanner;
 //working on it
 public class StringtoInt {
+    //UNDER CONSTRUCTION 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("i.e; Four Hundred Thousand");
@@ -19,6 +20,8 @@ public class StringtoInt {
         System.out.println(second);
         int f = 0;
         long s = 0;
+        long t = 0;
+        int count = Count(trimed," ");
         switch(first){
             case "one" -> f = 1;
             case "two" -> f = 2;
@@ -64,18 +67,31 @@ public class StringtoInt {
             case "thousand" -> s = 1000;
             case "million" -> s = 1000000;
             case "billion" -> s = 1000000000;
-            case "trillion" -> s = 1000000000000l;
+            case "trillion" -> s = 1000000000000L;
             default -> System.out.println("Invalid Input");
         }
+        long Ans = f*s;
         System.out.println(f);
         System.out.println(s);
         if(s<10){
-            System.out.println(f + (int)s);
+            System.out.println(f + s);
         }
         else{
             System.out.println(f * s);
-            System.out.printf("\n%,d",f * s);
+            System.out.printf("\n%,d",Ans);
         }
+        // System.out.println(Count(trimed," "));
         
     }
+    static int Count(String str,String a){
+      int count = 0;  
+      for(int i = 0;i< str.length();i++){
+        if(String.valueOf(str.charAt(i)).equals(a)){   //String.valueof() converts char to string
+            count++;
+         }
+      }
+      return count; //for the future modifications
+    }
+
+    
 }
