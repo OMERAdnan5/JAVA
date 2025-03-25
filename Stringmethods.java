@@ -7,7 +7,7 @@ public class Stringmethods {
         System.out.println("title.charAt(16): "+title.charAt(16));
         System.out.println("title.indexOf(J): "+title.indexOf("J"));
         System.out.println("title.lastIndexOf(space): "+title.lastIndexOf(""));
-        System.out.println("title.replace(\" \",$): "+title.replace("","$"));
+        System.out.println("title.replace(\" \",$): "+title.replace(" ","$"));
         System.out.println("title.toLowerCase(): "+title.toLowerCase());
         System.out.println("title.toUpperCase(): "+title.toUpperCase());
         System.out.println("space.trim(): "+space.trim());
