@@ -7,6 +7,11 @@ public class arrayofobjects {
         for(int i = 0; i < guns.length;i++){
           guns[i].shoot();
         }
+        gun[] gz = {new gun("colo1","gun1"),new gun("colo1","gun2"),new gun("colo1","gun3")};
+        System.out.println(" ");
+        for (gun g : gz) {
+            g.shoot();
+        }
 
     }
 }
