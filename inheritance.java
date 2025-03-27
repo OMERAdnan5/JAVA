@@ -5,6 +5,7 @@ public class inheritance {
         Parent parent = new Parent("Emily",23);
         Child1 child1 = new Child1("Sofia", 19);
         Child2 child2 = new Child2("Violet",18);
+        Child3 child3 = new Child3("Resberry",16,96);
         System.out.println(parent.age);
         parent.eating();
         parent.working();
@@ -18,6 +19,8 @@ public class inheritance {
         child2.sing();
         System.out.println(child2.singing);
         child2.eating();
+        child3.result();
+        System.out.println(child3.name+" marks "+child3.marks);
     }
 
 }
