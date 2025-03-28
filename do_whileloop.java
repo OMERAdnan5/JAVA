@@ -21,6 +21,7 @@ public class do_whileloop {
         } while (Num < 0);
 
         // creating a random password generator using do-while loop
+        System.out.println("Password Generator");
         int len = 0;
         do {
             System.out.print("Enter length of password(6-19):");
