@@ -18,5 +18,15 @@ public class car_obj {
     int getPrice(){
         return this.price;
     }
+    //setter: allows changes
+    void setModel( String model){
+        this.model = model;
+    }
+    void setPrice( String price){
+        this.model = price;
+    }
+    void setColor( String color){
+        this.model = color;
+    }
    
 }
