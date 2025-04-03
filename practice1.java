@@ -82,7 +82,7 @@ public class practice1 {
          if(guess == num){
             attempts+=1;
             System.out.println("You guessed correctly the number was "+num+" You Won!!!!");
-            System.out.println("It too you "+attempts+" try(s).");
+            System.out.println("It took you "+attempts+" try(s).");
             System.out.println("Do you want to play again?!!(Y/N): ");
             String choice = input.next();
             if(choice.equalsIgnoreCase("N")){
