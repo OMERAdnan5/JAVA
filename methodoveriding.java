@@ -4,10 +4,10 @@ public class methodoveriding {
       Fish goldy = new Fish("pallets","Goldfish"); 
       bear.eat();
       bear.movement();
-      System.out.println(bear);
+      System.out.println(bear); //memory location
       goldy.eat();
-      goldy.movement();
-      System.out.println(goldy);
+      goldy.movement();//swims
+      System.out.println(goldy); // --Fishy-- 
 
     }
 }
