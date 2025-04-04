@@ -9,7 +9,5 @@ public class Static {
         g2.arrived();
         g3.arrived();
         Guest.totalguests();
-
-
     }
 }
