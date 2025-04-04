@@ -58,8 +58,7 @@ public class Mathss {
         else if(m==0){
             System.out.println("The line is horizontal meaning slope is Zero: m ="+m);
         }
+        scanner.close();
        }
-
-
     }
 }
