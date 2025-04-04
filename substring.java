@@ -12,8 +12,6 @@ public class substring {
         System.out.println("Domain: "+email.substring(email.indexOf("@")));
         System.out.println("Name: "+email2.substring(0,email2.indexOf("@")));
         System.out.println("Domain: "+email2.substring(email2.indexOf("@")));
-
-
     }  
 
 }
