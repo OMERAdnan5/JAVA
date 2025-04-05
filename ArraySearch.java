@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ArraySearch{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        //searching an item in an array;
+        //searching an item in an array
         //check if student is present or not 
         String[] students ={
             "Umer","Saad","Ebad","Hasan",
