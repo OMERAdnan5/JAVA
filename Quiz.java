@@ -22,7 +22,6 @@ public class Quiz{
             {"A) Venus", "B) Jupiter", "C) Mars", "D) Saturn"},
             {"A) Magnesium","B) Gallium","C) Mercury","D) both B & C"}
         };
-        
         String[] answers = {"A", "B", "D", "C", "B", "C", "D"}; 
         int score = 0,correct = 0,incorrect = 0;
         for(int i=0;i<questions.length;i++){
