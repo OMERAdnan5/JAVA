@@ -8,6 +8,6 @@ public class polymorphism {
         for(Vehical vehical : vehicals){
             vehical.go();
         }
-        //for interfaces use implements instead of extends and public in methods
+        //for interfaces use implements instead of extends and public in methods.
     }
 }
